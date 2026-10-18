@@ -34,7 +34,7 @@ Developer mode stays on, and Chrome may show a reminder about that at startup. M
 
 1. Register a developer account at https://chrome.google.com/webstore/devconsole (one-time fee of US$5).
 2. Upload `future-me.zip`.
-3. Add at least one 1280×800 screenshot, a short and long description, and a privacy policy URL. `PRIVACY.md` is a starting point.
+3. Add at least one 1280×800 screenshot, a short and long description, and a privacy policy URL: https://futureme-fcaa6f.webflow.io/privacy (same text as `PRIVACY.md`).
 4. In the privacy section, declare the anonymous usage statistics (install code, shop domain, amounts) and that users can switch them off in Settings.
 5. Justify each permission:
    - `storage`: settings, jar and history, stored locally.
