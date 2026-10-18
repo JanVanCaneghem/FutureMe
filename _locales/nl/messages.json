@@ -3,7 +3,7 @@
     "message": "Future Me – pauzeer voor je betaalt"
   },
   "extDescription": {
-    "message": "Een korte pauze aan de kassa die toont wat je geld kan worden. Privé: alles blijft in je browser."
+    "message": "Een korte pauze aan de kassa die toont wat je geld kan worden. Je aankopen blijven in je browser; enkel anonieme totalen worden gedeeld."
   },
   "tagline": {
     "message": "pauzeer voor je betaalt"
@@ -319,5 +319,11 @@
   },
   "optIbanBad": {
     "message": "Dit IBAN klopt niet. Controleer op een tikfout."
+  },
+  "optStats": {
+    "message": "Anonieme statistieken delen"
+  },
+  "optStatsHelp": {
+    "message": "Helpt tonen hoeveel Future Me-gebruikers op zak houden. Stuurt een willekeurige installatiecode, het domein van de winkel en het bedrag wanneer je een aankoop overslaat of geld verzet. Nooit het product, de pagina, je naam of IBAN. Je kunt het altijd uitzetten."
   }
 }

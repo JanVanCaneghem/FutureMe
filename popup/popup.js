@@ -61,6 +61,7 @@
       const svg = FMT.qrSvg(FMT.epcPayload(settings.transferName, settings.transferIban, toMove, FMT.REFERENCE), 176);
       svg.setAttribute('aria-label', t('qrAria', [FM.money(toMove, 'EUR'), settings.transferName]));
       slot.appendChild(svg);
+      FM.track('qr', { amount: toMove });
       document.getElementById('moveTo').textContent =
         FM.money(toMove, 'EUR', 2) + ' \u2192 ' + settings.transferName + ' \u00b7 ' + FMT.maskIban(settings.transferIban);
       qrBox.hidden = false;
@@ -69,6 +70,7 @@
     document.getElementById('moveDone').onclick = async function () {
       await FMT.markMoved(toMove);
       await FM.addLog({ amount: toMove, decision: 'moved' });
+      FM.track('transfer', { amount: toMove, confirmed: true });
       qrBox.hidden = true;
       btn.hidden = false;
       render();
@@ -100,6 +102,7 @@
       actions.appendChild(button(t('popupSkipItem'), 'primary', async function () {
         await FM.addToJar(item.amount || 0);
         await FM.addLog({ host: item.host, amount: item.amount, decision: 'skip-after-wait' });
+        FM.track('skip', { amount: item.amount, currency: item.currency, host: item.host });
         await removeItem(item.id);
       }));
       actions.appendChild(button(t('popupOpen'), '', function () {

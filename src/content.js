@@ -539,6 +539,7 @@
         onclick: async function () {
           const res = await FM.addToJar(ui.amount || 0);
           FM.addLog({ host: FM.hostKey(location.hostname), amount: ui.amount, decision: 'skip', reason: ui.reason });
+          FM.track('skip', { amount: ui.amount, currency: ui.currency, host: FM.hostKey(location.hostname) });
           renderSaved(res);
         }
       });
@@ -597,6 +598,7 @@
       if (canTransfer) {
         const svg = FMT.qrSvg(FMT.epcPayload(settings.transferName, settings.transferIban, amt, FMT.REFERENCE), 168);
         svg.setAttribute('aria-label', t('qrAria', [FM.money(amt, 'EUR'), settings.transferName]));
+        FM.track('qr', { amount: amt });
         children.push(h('div', { class: 'qr-box' }, [
           h('div', { class: 'qr' }, [svg]),
           h('div', { class: 'qr-text' }, [
@@ -616,10 +618,14 @@
           onclick: async function () {
             await FMT.markMoved(amt);
             FM.addLog({ host: FM.hostKey(location.hostname), amount: amt, decision: 'moved' });
+            FM.track('transfer', { amount: amt, confirmed: true });
             close('done');
           }
         }));
-        btns.push(h('button', { class: 'btn tertiary', type: 'button', text: t('qrLater'), onclick: function () { close('done'); } }));
+        btns.push(h('button', { class: 'btn tertiary', type: 'button', text: t('qrLater'), onclick: function () {
+          FM.track('transfer', { amount: amt, confirmed: false });
+          close('done');
+        } }));
         children.push(h('div', { class: 'actions' }, btns));
         card(children, t('dialogLabel'));
         btns[0].focus();

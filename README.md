@@ -13,7 +13,7 @@ A browser extension for Chrome and Edge. When you click "Buy now", "Checkout" or
   - *Buy anyway*: the original click goes through. You won't be asked again for the next 15 minutes in that tab, so a multi-step checkout isn't interrupted twice.
 - **Any other shop.** Open it, click the Future Me toolbar button, choose "Watch this shop".
 - **English and Dutch**, following the browser's language.
-- **Private.** No account, no server, no tracking. Everything is stored in the browser.
+- **Private by design.** No account. Your purchases, jar and IBAN stay in the browser. Only anonymous totals (a random install code, shop domain, amounts) go to the Future Me counter, and users can switch that off in Settings.
 
 ## Install it for testing (5 minutes)
 
@@ -31,7 +31,7 @@ Testers can install it the same way. Developer mode stays on, and Chrome shows a
 1. Register a developer account at https://chrome.google.com/webstore/devconsole (one-time fee of US$5).
 2. Upload `future-me.zip`.
 3. Add at least one 1280×800 screenshot, a short and long description, and a privacy policy URL. `PRIVACY.md` is a starting point.
-4. In the privacy section, declare that no user data is collected or transferred.
+4. In the privacy section, declare the anonymous usage statistics (install code, shop domain, amounts) and that users can switch them off in Settings.
 5. Justify each permission:
    - `storage`: settings, jar and history, stored locally.
    - `alarms` and `notifications`: the cooling-off reminder.
@@ -60,6 +60,8 @@ When nothing is detected, the pause still appears, with an empty amount field th
 | `src/sites.js` | Shop selectors and button phrases (EN/NL/FR/DE) |
 | `src/shared.js` | Settings, price parsing, money formatting |
 | `src/background.js` | Reminders, notifications, added shops |
+| `src/stats.js` | Anonymous stats to the Supabase counter |
+| `supabase/migrations/` | Database tables and functions behind the counter |
 | `popup/` | Toolbar popup: jar, stats, cooling-off list, this shop |
 | `options/` | Settings page |
 | `_locales/` | English and Dutch texts |

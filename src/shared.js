@@ -12,7 +12,8 @@ var FM = (function () {
     transferName: '',     // account holder name for the transfer QR
     transferIban: '',     // IBAN to transfer skipped amounts to (savings or broker)
     disabledHosts: [],    // shops where the user switched the pause off
-    customHosts: []       // extra shops the user added (origins)
+    customHosts: [],      // extra shops the user added (origins)
+    shareStats: true      // send anonymous totals (install, skips, transfers) to the Future Me counter
   };
   const STATE_DEFAULTS = { jar: 0, skipped: 0, moved: 0, waitlist: [], log: [] };
 
@@ -119,6 +120,20 @@ var FM = (function () {
     return { jar: jar, skipped: skipped };
   }
 
+  // Anonymous stats. Fire-and-forget: the service worker decides whether to send
+  // (shareStats setting) and does the actual network call. Never blocks the UI.
+  // event: 'skip' | 'qr' | 'transfer'; data: { amount, currency, host, confirmed }
+  function track(event, data) {
+    try {
+      const msg = { type: 'fm-track', event: event, data: data || {} };
+      if (typeof self !== 'undefined' && self.FMStats && typeof window === 'undefined') {
+        self.FMStats.handle(msg);
+      } else {
+        chrome.runtime.sendMessage(msg).catch(function () { /* worker asleep; ignore */ });
+      }
+    } catch (e) { /* stats must never break the pause */ }
+  }
+
   function applyI18n(root) {
     (root || document).querySelectorAll('[data-i18n]').forEach(function (el) {
       el.textContent = t(el.getAttribute('data-i18n'));
@@ -141,6 +156,7 @@ var FM = (function () {
     getState: getState,
     addLog: addLog,
     addToJar: addToJar,
+    track: track,
     applyI18n: applyI18n
   };
 })();

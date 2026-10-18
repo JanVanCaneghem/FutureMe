@@ -1,5 +1,5 @@
 // Future Me service worker: cooling-off reminders, shops the user adds, onboarding.
-importScripts('shared.js');
+importScripts('shared.js', 'stats.js');
 
 const CONTENT_FILES = ['vendor/qrcode.js', 'src/shared.js', 'src/transfer.js', 'src/sites.js', 'src/content.js'];
 
@@ -7,6 +7,8 @@ chrome.runtime.onInstalled.addListener(async function (details) {
   const current = await chrome.storage.sync.get(FM.DEFAULTS);
   await chrome.storage.sync.set(current);
   await reRegisterCustomHosts();
+  chrome.alarms.create('fm-ping', { periodInMinutes: 24 * 60 });
+  FMStats.ping();
   if (details.reason === 'install') {
     chrome.runtime.openOptionsPage();
   }
@@ -14,6 +16,17 @@ chrome.runtime.onInstalled.addListener(async function (details) {
 
 chrome.runtime.onStartup.addListener(function () {
   reRegisterCustomHosts();
+  FMStats.ping();
+});
+
+// Daily "still here" ping for the active-installs count.
+chrome.alarms.onAlarm.addListener(function (alarm) {
+  if (alarm.name === 'fm-ping') FMStats.ping();
+});
+
+// Stats switched back on: send what is queued. Switched off: queue is dropped on next flush.
+chrome.storage.onChanged.addListener(function (changes, area) {
+  if (area === 'sync' && changes.shareStats) FMStats.flush();
 });
 
 chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse) {
@@ -21,6 +34,10 @@ chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse) {
   if (msg.type === 'fm-wait') {
     addToWaitlist(msg.item).then(function (item) { sendResponse({ ok: true, item: item }); });
     return true;
+  }
+  if (msg.type === 'fm-track') {
+    FMStats.handle(msg);
+    return;
   }
   if (msg.type === 'fm-open-options') {
     chrome.runtime.openOptionsPage();
@@ -94,6 +111,7 @@ chrome.notifications.onButtonClicked.addListener(async function (nid, index) {
   }
   await FM.addToJar(f.item.amount || 0);
   await FM.addLog({ host: f.item.host, amount: f.item.amount, decision: 'skip-after-wait' });
+  FM.track('skip', { amount: f.item.amount, currency: f.item.currency, host: f.item.host });
   await chrome.storage.local.set({ waitlist: f.list.filter(function (i) { return i.id !== f.id; }) });
 });
 

@@ -3,7 +3,7 @@
     "message": "Future Me – pause before you pay"
   },
   "extDescription": {
-    "message": "A short pause at checkout that shows what your money could become. Private: everything stays in your browser."
+    "message": "A short pause at checkout that shows what your money could become. Your purchases stay in your browser; only anonymous totals are shared."
   },
   "tagline": {
     "message": "pause before you pay"
@@ -319,5 +319,11 @@
   },
   "optIbanBad": {
     "message": "This IBAN doesn't look right. Check for a typo."
+  },
+  "optStats": {
+    "message": "Share anonymous stats"
+  },
+  "optStatsHelp": {
+    "message": "Helps show how much Future Me users keep in their pockets. Sends a random install code, the shop's domain and the amount when you skip or move money. Never the product, page, name or IBAN. Switch it off any time."
   }
 }

@@ -28,6 +28,7 @@
     passSel.value = String(s.passMinutes);
     document.getElementById('pauseOnCart').checked = !!s.pauseOnCart;
     document.getElementById('requireReason').checked = s.requireReason !== false;
+    document.getElementById('shareStats').checked = s.shareStats !== false;
     document.getElementById('savingsUrl').value = s.savingsUrl || '';
     document.getElementById('transferName').value = s.transferName || '';
     document.getElementById('transferIban').value = s.transferIban ? FMT.formatIban(s.transferIban) : '';
@@ -88,6 +89,7 @@
   bind('passMinutes', function (el) { return Number(el.value); });
   bind('pauseOnCart', function (el) { return el.checked; });
   bind('requireReason', function (el) { return el.checked; });
+  bind('shareStats', function (el) { return el.checked; });
   bind('savingsUrl', function (el) {
     const v = el.value.trim();
     if (!v) return '';
