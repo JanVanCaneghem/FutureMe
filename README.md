@@ -19,7 +19,7 @@ A browser extension for Chrome and Edge. When you click "Buy now", "Checkout" or
 
 Future Me is waiting for review in the Chrome Web Store and Edge Add-ons. Until then, install it by hand:
 
-**[⬇ Download the latest version (future-me.zip)](https://github.com/JanVanCaneghem/futureme/releases/latest/download/future-me.zip)**
+**[⬇ Download the latest version (future-me.zip)](https://github.com/JanVanCaneghem/FutureMe/raw/claude/futureme-1.3.1/dist/future-me.zip)**
 
 1. Unzip `future-me.zip` into a folder you'll keep, for example `Documents/future-me`. If you delete or move the folder, the add-on disappears.
 2. In Chrome, go to `chrome://extensions`. In Edge, go to `edge://extensions`.
