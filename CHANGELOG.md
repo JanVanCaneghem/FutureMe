@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.3.2 — 2026-10-18
+Store-ready description.
+
+- **Shorter description** in English and Dutch (127 and 128 characters), within the Chrome Web Store limit of 132. Same privacy promise, fewer words.
+- No code or permission changes.
+
 ## 1.3.1 — 2026-10-18
 Connects Future Me to the Supabase counter so the website can show real totals.
 
