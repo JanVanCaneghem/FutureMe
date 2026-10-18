@@ -15,16 +15,20 @@ A browser extension for Chrome and Edge. When you click "Buy now", "Checkout" or
 - **English and Dutch**, following the browser's language.
 - **Private by design.** No account. Your purchases, jar and IBAN stay in the browser. Only anonymous totals (a random install code, shop domain, amounts) go to the Future Me counter, and users can switch that off in Settings.
 
-## Install it for testing (5 minutes)
+## Install it (beta, 5 minutes)
 
-1. Unzip `future-me.zip` into a folder you'll keep, for example `Documents/future-me`.
+Future Me is waiting for review in the Chrome Web Store and Edge Add-ons. Until then, install it by hand:
+
+**[⬇ Download the latest version (future-me.zip)](https://github.com/JanVanCaneghem/futureme/releases/latest/download/future-me.zip)**
+
+1. Unzip `future-me.zip` into a folder you'll keep, for example `Documents/future-me`. If you delete or move the folder, the add-on disappears.
 2. In Chrome, go to `chrome://extensions`. In Edge, go to `edge://extensions`.
 3. Turn on **Developer mode**.
 4. Click **Load unpacked** and select the unzipped folder, the one that contains `manifest.json`.
 5. The settings page opens. Fill in your savings or broker link if you want the "Move it now" button.
 6. Pin Future Me to the toolbar via the puzzle-piece icon.
 
-Testers can install it the same way. Developer mode stays on, and Chrome shows a reminder about that at startup.
+Developer mode stays on, and Chrome may show a reminder about that at startup. Manual installs don't update themselves: to update, download the new zip, replace the folder's contents, and click the reload icon on Future Me in `chrome://extensions`.
 
 ## Publishing in the Chrome Web Store
 
