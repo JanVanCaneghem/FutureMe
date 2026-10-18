@@ -1,0 +1,323 @@
+{
+  "extName": {
+    "message": "Future Me – pauzeer voor je betaalt"
+  },
+  "extDescription": {
+    "message": "Een korte pauze aan de kassa die toont wat je geld kan worden. Privé: alles blijft in je browser."
+  },
+  "tagline": {
+    "message": "pauzeer voor je betaalt"
+  },
+  "close": {
+    "message": "Sluiten"
+  },
+  "dialogLabel": {
+    "message": "Future Me pauze"
+  },
+  "thisPurchase": {
+    "message": "Deze aankoop"
+  },
+  "headline": {
+    "message": "$1. Is het waard wat het kan worden?"
+  },
+  "headlineProduct": {
+    "message": "$1 voor $2. Is het waard wat het kan worden?"
+  },
+  "amountLabel": {
+    "message": "Bedrag"
+  },
+  "investedIn": {
+    "message": "Belegd in plaats daarvan, over $1 jaar"
+  },
+  "horizon": {
+    "message": "Termijn"
+  },
+  "years": {
+    "message": "$1 jaar"
+  },
+  "disclaimer": {
+    "message": "Illustratie aan $1% per jaar, een langetermijngemiddelde voor wereldwijde aandelen. Geen financieel advies: rendementen schommelen en kunnen negatief zijn."
+  },
+  "whyNow": {
+    "message": "Waarom wil je het nu?"
+  },
+  "reasonNeed": {
+    "message": "Ik heb het nodig"
+  },
+  "reasonBroken": {
+    "message": "Iets kapots vervangen"
+  },
+  "reasonDeal": {
+    "message": "Het is een goede deal"
+  },
+  "reasonGift": {
+    "message": "Het is een cadeau"
+  },
+  "reasonWant": {
+    "message": "Ik wil het gewoon"
+  },
+  "skip": {
+    "message": "Niet kopen"
+  },
+  "skipWithAmount": {
+    "message": "Niet kopen, $1 in de pot"
+  },
+  "wait": {
+    "message": "$1 uur wachten"
+  },
+  "buyAnyway": {
+    "message": "Toch kopen"
+  },
+  "pickReason": {
+    "message": "Kies een reden om “Toch kopen” te ontgrendelen."
+  },
+  "savedHeadline": {
+    "message": "$1 in je pot."
+  },
+  "savedHeadlineNoAmount": {
+    "message": "Overgeslagen. Mooi zo."
+  },
+  "jarTotal": {
+    "message": "In je pot"
+  },
+  "skippedCount": {
+    "message": "Aankopen overgeslagen"
+  },
+  "moveItForReal": {
+    "message": "De pot telt alleen. Maak het echt: zet het bedrag op je spaarrekening of bij je broker."
+  },
+  "openSavings": {
+    "message": "Nu overzetten"
+  },
+  "setSavingsLink": {
+    "message": "Mijn spaarlink toevoegen"
+  },
+  "backToShop": {
+    "message": "Terug naar de winkel"
+  },
+  "waitHeadline": {
+    "message": "Geparkeerd. Over $1 uur vragen we het opnieuw."
+  },
+  "waitBody": {
+    "message": "Wil je het dan nog altijd, koop het dan met een helder hoofd. Een aftelklok op deze pagina is tegen dan verdwenen. Dat is net de bedoeling."
+  },
+  "reminderTitle": {
+    "message": "Wil je het nog altijd?"
+  },
+  "reminderContext": {
+    "message": "Je bedenktijd is voorbij"
+  },
+  "reminderOpen": {
+    "message": "Openen"
+  },
+  "reminderSkip": {
+    "message": "Niet kopen, in de pot"
+  },
+  "popupJar": {
+    "message": "In je pot"
+  },
+  "popupWorth": {
+    "message": "≈ $1 over $2 jaar als je het belegt"
+  },
+  "popupSkipped": {
+    "message": "Overgeslagen"
+  },
+  "popupWaited": {
+    "message": "Geparkeerd"
+  },
+  "popupBought": {
+    "message": "Toch gekocht"
+  },
+  "popupTopReason": {
+    "message": "Meest gekozen reden als je toch koopt: $1"
+  },
+  "popupWaitlist": {
+    "message": "Bedenktijd"
+  },
+  "popupWaitEmpty": {
+    "message": "Niets geparkeerd. Kies “Wachten” in de pauze om een aankoop te parkeren."
+  },
+  "popupDue": {
+    "message": "Beslis nu"
+  },
+  "popupLeft": {
+    "message": "nog $1 u"
+  },
+  "popupOpen": {
+    "message": "Openen"
+  },
+  "popupSkipItem": {
+    "message": "Niet kopen"
+  },
+  "popupRemove": {
+    "message": "Verwijderen"
+  },
+  "popupThisShop": {
+    "message": "Deze winkel"
+  },
+  "popupWatching": {
+    "message": "Aankopen worden hier gepauzeerd"
+  },
+  "popupPaused": {
+    "message": "Hier uitgeschakeld"
+  },
+  "popupNotWatched": {
+    "message": "Nog niet gevolgd"
+  },
+  "popupWatch": {
+    "message": "Volg deze winkel"
+  },
+  "popupTurnOff": {
+    "message": "Hier uitschakelen"
+  },
+  "popupTurnOn": {
+    "message": "Hier inschakelen"
+  },
+  "popupSettings": {
+    "message": "Instellingen"
+  },
+  "popupNoShop": {
+    "message": "Open een webwinkel om die hier te beheren."
+  },
+  "optTitle": {
+    "message": "Future Me instellingen"
+  },
+  "optIntro": {
+    "message": "Future Me pauzeert je op het moment dat je in een webwinkel geld vastlegt, en toont wat dat geld kan worden. Niets verlaat je browser."
+  },
+  "optRate": {
+    "message": "Jaarlijks rendement voor de illustratie"
+  },
+  "optRateHelp": {
+    "message": "7% is een gangbaar langetermijngemiddelde voor wereldwijde aandelen. Verlaag het voor een voorzichtiger beeld."
+  },
+  "optYears": {
+    "message": "Standaard termijn"
+  },
+  "optReminder": {
+    "message": "Bedenktijd bij “Wachten”"
+  },
+  "optHours": {
+    "message": "$1 uur"
+  },
+  "optCart": {
+    "message": "Ook pauzeren bij “In winkelwagen”"
+  },
+  "optCartHelp": {
+    "message": "Standaard uit: de pauze komt bij “Nu kopen”, afrekenen en “Bestelling plaatsen”."
+  },
+  "optReason": {
+    "message": "Vraag een reden voor “Toch kopen”"
+  },
+  "optReasonHelp": {
+    "message": "Een beetje frictie. Je redenen verschijnen als patroon in het venster van de werkbalkknop."
+  },
+  "optSavings": {
+    "message": "Mijn spaar- of brokerlink"
+  },
+  "optSavingsHelp": {
+    "message": "De pagina of app waar je geld overzet, bv. de spaarpagina van je bank of je broker. Opent nadat je een aankoop overslaat."
+  },
+  "optShops": {
+    "message": "Winkels"
+  },
+  "optShopsHelp": {
+    "message": "Future Me volgt grote winkels zoals Amazon, bol, Coolblue en Zalando standaard. Voeg een andere winkel toe via de werkbalkknop terwijl je erop bent."
+  },
+  "optCustom": {
+    "message": "Winkels die je toevoegde"
+  },
+  "optOff": {
+    "message": "Winkels waar je het uitschakelde"
+  },
+  "optNone": {
+    "message": "Geen"
+  },
+  "optRemove": {
+    "message": "Verwijderen"
+  },
+  "optData": {
+    "message": "Je gegevens"
+  },
+  "optDataHelp": {
+    "message": "Je pot, bedenktijdlijst en beslissingen worden enkel in deze browser bewaard. Verwijderen van de extensie wist ze."
+  },
+  "optReset": {
+    "message": "Pot en geschiedenis wissen"
+  },
+  "optResetConfirm": {
+    "message": "Je pot, bedenktijdlijst en geschiedenis wissen?"
+  },
+  "optSaved": {
+    "message": "Opgeslagen"
+  },
+  "passToast": {
+    "message": "Future Me: zelfde winkelmand, ga je gang. Vrije doorgang nog $1 min."
+  },
+  "optPass": {
+    "message": "Vrije doorgang na “Toch kopen”"
+  },
+  "optPassHelp": {
+    "message": "De volgende stappen van dezelfde bestelling gaan door zonder nieuwe pauze, zolang het totaal gelijk blijft (tot €10 extra voor verzending). Voeg je iets toe of wijzig je iets, dan komt de pauze terug."
+  },
+  "optPassOff": {
+    "message": "Uit: pauze bij elke stap"
+  },
+  "optMinutes": {
+    "message": "$1 minuten"
+  },
+  "qrAria": {
+    "message": "Betaal-QR-code voor $1 naar $2"
+  },
+  "qrTitle": {
+    "message": "Maak het echt: scan met je bankapp"
+  },
+  "qrSteps": {
+    "message": "Open je bankapp, kies QR-code scannen, controleer de gegevens en bevestig."
+  },
+  "qrAmount": {
+    "message": "Bedrag"
+  },
+  "qrTo": {
+    "message": "Naar"
+  },
+  "qrRef": {
+    "message": "Mededeling"
+  },
+  "qrSafe": {
+    "message": "Je bevestigt de overschrijving zelf in je eigen bankapp. Future Me maakt nooit verbinding met je bank."
+  },
+  "qrDone": {
+    "message": "Klaar, overgezet"
+  },
+  "qrLater": {
+    "message": "Later, laat het in de pot"
+  },
+  "setUpTransfer": {
+    "message": "Overschrijven instellen"
+  },
+  "popupToMove": {
+    "message": "Nog over te zetten"
+  },
+  "popupMoveBtn": {
+    "message": "Overschrijven met QR"
+  },
+  "optTransfer": {
+    "message": "Zet het geld echt opzij"
+  },
+  "optTransferHelp": {
+    "message": "Als je een aankoop overslaat, kan Future Me een betaal-QR-code tonen. Je bankapp scant hem en opent een overschrijving die al ingevuld is naar de rekening hieronder. Je bevestigt altijd zelf, in je eigen app."
+  },
+  "optTransferName": {
+    "message": "Naam rekeninghouder"
+  },
+  "optIbanHelp": {
+    "message": "Je spaarrekening, of het stort-IBAN van je broker. In Trade Republic vind je het onder Overschrijven → Geld toevoegen → Bankoverschrijving. Brokers aanvaarden meestal alleen geld van een rekening op je eigen naam."
+  },
+  "optIbanOk": {
+    "message": "Geldig IBAN"
+  },
+  "optIbanBad": {
+    "message": "Dit IBAN klopt niet. Controleer op een tikfout."
+  }
+}

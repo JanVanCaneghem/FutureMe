@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Future Me</title>
+  <link rel="stylesheet" href="../ui/ui.css">
+  <link rel="stylesheet" href="options.css">
+</head>
+<body class="theme-day">
+  <main>
+    <header>
+      <div class="brand">
+        <img class="logo" src="../brand/logo.svg" alt="Future Me" width="128" height="32">
+        <span class="tag" data-i18n="tagline"></span>
+      </div>
+      <h1 data-i18n="optTitle"></h1>
+      <p class="intro" data-i18n="optIntro"></p>
+    </header>
+
+    <section>
+      <div class="field">
+        <label for="rate" data-i18n="optRate"></label>
+        <div class="inline"><input id="rate" type="number" min="1" max="12" step="0.5"><span>%</span></div>
+        <p class="help" data-i18n="optRateHelp"></p>
+      </div>
+      <div class="field">
+        <label for="years" data-i18n="optYears"></label>
+        <select id="years"></select>
+      </div>
+      <div class="field">
+        <label for="reminderHours" data-i18n="optReminder"></label>
+        <select id="reminderHours"></select>
+      </div>
+      <div class="field">
+        <label for="passMinutes" data-i18n="optPass"></label>
+        <select id="passMinutes"></select>
+        <p class="help" data-i18n="optPassHelp"></p>
+      </div>
+      <div class="field check">
+        <input id="pauseOnCart" type="checkbox">
+        <div>
+          <label for="pauseOnCart" data-i18n="optCart"></label>
+          <p class="help" data-i18n="optCartHelp"></p>
+        </div>
+      </div>
+      <div class="field check">
+        <input id="requireReason" type="checkbox">
+        <div>
+          <label for="requireReason" data-i18n="optReason"></label>
+          <p class="help" data-i18n="optReasonHelp"></p>
+        </div>
+      </div>
+      <div class="field">
+        <label for="savingsUrl" data-i18n="optSavings"></label>
+        <input id="savingsUrl" type="url" placeholder="https://">
+        <p class="help" data-i18n="optSavingsHelp"></p>
+      </div>
+    </section>
+
+    <section>
+      <h2 data-i18n="optTransfer"></h2>
+      <p class="help" data-i18n="optTransferHelp"></p>
+      <div class="field">
+        <label for="transferName" data-i18n="optTransferName"></label>
+        <input id="transferName" type="text" maxlength="70" autocomplete="name">
+      </div>
+      <div class="field">
+        <label for="transferIban">IBAN</label>
+        <input id="transferIban" type="text" maxlength="42" autocomplete="off" spellcheck="false" placeholder="BE00 0000 0000 0000">
+        <p class="help" id="ibanStatus" aria-live="polite"></p>
+        <p class="help" data-i18n="optIbanHelp"></p>
+      </div>
+    </section>
+
+    <section>
+      <h2 data-i18n="optShops"></h2>
+      <p class="help" data-i18n="optShopsHelp"></p>
+      <h3 data-i18n="optCustom"></h3>
+      <ul id="customHosts" class="list"></ul>
+      <h3 data-i18n="optOff"></h3>
+      <ul id="disabledHosts" class="list"></ul>
+    </section>
+
+    <section>
+      <h2 data-i18n="optData"></h2>
+      <p class="help" data-i18n="optDataHelp"></p>
+      <div><button class="btn quiet" type="button" id="reset" data-i18n="optReset"></button></div>
+    </section>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </main>
+  <script src="../src/shared.js"></script>
+  <script src="../src/transfer.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Future Me</title>
+  <link rel="stylesheet" href="../ui/ui.css">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <header class="brand">
+      <img class="logo" src="../brand/logo.svg" alt="Future Me" width="104" height="26">
+      <span class="tag" data-i18n="tagline"></span>
+    </header>
+
+    <section class="jar">
+      <div class="jar-k" data-i18n="popupJar"></div>
+      <div class="jar-v" id="jar">€0</div>
+      <div class="jar-worth" id="worth"></div>
+    </section>
+
+    <section class="stats">
+      <div><div class="v" id="nSkip">0</div><div class="k" data-i18n="popupSkipped"></div></div>
+      <div><div class="v" id="nWait">0</div><div class="k" data-i18n="popupWaited"></div></div>
+      <div><div class="v" id="nBuy">0</div><div class="k" data-i18n="popupBought"></div></div>
+    </section>
+    <p class="insight" id="insight" hidden></p>
+
+    <section class="move" id="move" hidden>
+      <div class="move-row">
+        <div>
+          <div class="k" data-i18n="popupToMove"></div>
+          <div class="v" id="toMove"></div>
+        </div>
+        <button class="btn small primary" type="button" id="moveBtn"></button>
+      </div>
+      <div class="move-qr" id="moveQr" hidden>
+        <div class="qr" id="qrSlot"></div>
+        <p class="muted" data-i18n="qrSteps"></p>
+        <p class="move-to" id="moveTo"></p>
+        <button class="btn small primary" type="button" id="moveDone" data-i18n="qrDone"></button>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2 class="section-title" data-i18n="popupWaitlist"></h2>
+      <ul class="waitlist" id="waitlist"></ul>
+      <p class="muted" id="waitEmpty" data-i18n="popupWaitEmpty"></p>
+    </section>
+
+    <section class="block" id="shop">
+      <h2 class="section-title" data-i18n="popupThisShop"></h2>
+      <div class="shop-row">
+        <div>
+          <div class="shop-host" id="shopHost"></div>
+          <div class="muted" id="shopStatus"></div>
+        </div>
+        <button class="btn small" type="button" id="shopBtn" hidden></button>
+      </div>
+    </section>
+
+    <footer>
+      <button class="btn quiet small" type="button" id="settings" data-i18n="popupSettings"></button>
+    </footer>
+  </main>
+  <script src="../vendor/qrcode.js"></script>
+  <script src="../src/shared.js"></script>
+  <script src="../src/transfer.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,323 @@
+{
+  "extName": {
+    "message": "Future Me – pause before you pay"
+  },
+  "extDescription": {
+    "message": "A short pause at checkout that shows what your money could become. Private: everything stays in your browser."
+  },
+  "tagline": {
+    "message": "pause before you pay"
+  },
+  "close": {
+    "message": "Close"
+  },
+  "dialogLabel": {
+    "message": "Future Me pause"
+  },
+  "thisPurchase": {
+    "message": "This purchase"
+  },
+  "headline": {
+    "message": "$1. Is it worth what it could become?"
+  },
+  "headlineProduct": {
+    "message": "$1 on $2. Is it worth what it could become?"
+  },
+  "amountLabel": {
+    "message": "Amount"
+  },
+  "investedIn": {
+    "message": "Invested instead, in $1 years"
+  },
+  "horizon": {
+    "message": "Horizon"
+  },
+  "years": {
+    "message": "$1 yrs"
+  },
+  "disclaimer": {
+    "message": "Illustration at $1% a year, a long-run average for global shares. Not financial advice: returns vary and can be negative."
+  },
+  "whyNow": {
+    "message": "Why do you want it right now?"
+  },
+  "reasonNeed": {
+    "message": "I need it"
+  },
+  "reasonBroken": {
+    "message": "Replacing something broken"
+  },
+  "reasonDeal": {
+    "message": "The deal is good"
+  },
+  "reasonGift": {
+    "message": "It's a gift"
+  },
+  "reasonWant": {
+    "message": "I just want it"
+  },
+  "skip": {
+    "message": "Skip it"
+  },
+  "skipWithAmount": {
+    "message": "Skip it, jar the $1"
+  },
+  "wait": {
+    "message": "Wait $1 hours"
+  },
+  "buyAnyway": {
+    "message": "Buy anyway"
+  },
+  "pickReason": {
+    "message": "Pick a reason to unlock “Buy anyway”."
+  },
+  "savedHeadline": {
+    "message": "$1 into your jar."
+  },
+  "savedHeadlineNoAmount": {
+    "message": "Skipped. Nice."
+  },
+  "jarTotal": {
+    "message": "Jar total"
+  },
+  "skippedCount": {
+    "message": "Purchases skipped"
+  },
+  "moveItForReal": {
+    "message": "The jar only counts. Make it real: move the amount to your savings account or broker."
+  },
+  "openSavings": {
+    "message": "Move it now"
+  },
+  "setSavingsLink": {
+    "message": "Add my savings link"
+  },
+  "backToShop": {
+    "message": "Back to the shop"
+  },
+  "waitHeadline": {
+    "message": "Parked. We'll ask again in $1 hours."
+  },
+  "waitBody": {
+    "message": "If you still want it then, buy it with a clear head. Any countdown timer on this page will be gone by then. That's the point."
+  },
+  "reminderTitle": {
+    "message": "Still want it?"
+  },
+  "reminderContext": {
+    "message": "Your cooling-off pause is over"
+  },
+  "reminderOpen": {
+    "message": "Open it"
+  },
+  "reminderSkip": {
+    "message": "Skip it, jar the money"
+  },
+  "popupJar": {
+    "message": "In your jar"
+  },
+  "popupWorth": {
+    "message": "≈ $1 in $2 years if invested"
+  },
+  "popupSkipped": {
+    "message": "Skipped"
+  },
+  "popupWaited": {
+    "message": "Parked"
+  },
+  "popupBought": {
+    "message": "Bought anyway"
+  },
+  "popupTopReason": {
+    "message": "Most common reason when you buy anyway: $1"
+  },
+  "popupWaitlist": {
+    "message": "Cooling off"
+  },
+  "popupWaitEmpty": {
+    "message": "Nothing parked. Hit “Wait” in the pause to park a purchase."
+  },
+  "popupDue": {
+    "message": "Decide now"
+  },
+  "popupLeft": {
+    "message": "$1 h left"
+  },
+  "popupOpen": {
+    "message": "Open"
+  },
+  "popupSkipItem": {
+    "message": "Skip it"
+  },
+  "popupRemove": {
+    "message": "Remove"
+  },
+  "popupThisShop": {
+    "message": "This shop"
+  },
+  "popupWatching": {
+    "message": "Pausing purchases here"
+  },
+  "popupPaused": {
+    "message": "Switched off here"
+  },
+  "popupNotWatched": {
+    "message": "Not watched yet"
+  },
+  "popupWatch": {
+    "message": "Watch this shop"
+  },
+  "popupTurnOff": {
+    "message": "Switch off here"
+  },
+  "popupTurnOn": {
+    "message": "Switch on here"
+  },
+  "popupSettings": {
+    "message": "Settings"
+  },
+  "popupNoShop": {
+    "message": "Open a webshop to manage it here."
+  },
+  "optTitle": {
+    "message": "Future Me settings"
+  },
+  "optIntro": {
+    "message": "Future Me pauses you at the moment you commit money in a webshop, and shows what that money could become. Nothing leaves your browser."
+  },
+  "optRate": {
+    "message": "Yearly return used for the illustration"
+  },
+  "optRateHelp": {
+    "message": "7% is a common long-run average for global shares. Lower it for a more cautious picture."
+  },
+  "optYears": {
+    "message": "Default horizon"
+  },
+  "optReminder": {
+    "message": "Cooling-off period for “Wait”"
+  },
+  "optHours": {
+    "message": "$1 hours"
+  },
+  "optCart": {
+    "message": "Also pause on “Add to cart”"
+  },
+  "optCartHelp": {
+    "message": "Off by default: the pause comes at “Buy now”, checkout and “Place order”."
+  },
+  "optReason": {
+    "message": "Ask for a reason before “Buy anyway”"
+  },
+  "optReasonHelp": {
+    "message": "A small bit of friction. Your reasons show up as a pattern in the toolbar popup."
+  },
+  "optSavings": {
+    "message": "My savings or broker link"
+  },
+  "optSavingsHelp": {
+    "message": "The page or app link where you move money, e.g. your bank's savings page or your broker. Opens after you skip a purchase."
+  },
+  "optShops": {
+    "message": "Shops"
+  },
+  "optShopsHelp": {
+    "message": "Future Me watches large shops such as Amazon, bol, Coolblue and Zalando out of the box. Add any other shop from the toolbar button while you're on it."
+  },
+  "optCustom": {
+    "message": "Shops you added"
+  },
+  "optOff": {
+    "message": "Shops where you switched it off"
+  },
+  "optNone": {
+    "message": "None"
+  },
+  "optRemove": {
+    "message": "Remove"
+  },
+  "optData": {
+    "message": "Your data"
+  },
+  "optDataHelp": {
+    "message": "Your jar, cooling-off list and decisions are stored only in this browser. Uninstalling removes them."
+  },
+  "optReset": {
+    "message": "Reset jar and history"
+  },
+  "optResetConfirm": {
+    "message": "Reset your jar, cooling-off list and history?"
+  },
+  "optSaved": {
+    "message": "Saved"
+  },
+  "passToast": {
+    "message": "Future Me: same basket, go ahead. Free pass for $1 more min."
+  },
+  "optPass": {
+    "message": "Free pass after “Buy anyway”"
+  },
+  "optPassHelp": {
+    "message": "The next steps of the same checkout go through without a new pause, as long as the total stays the same (up to €10 extra for shipping). Add or change something and the pause comes back."
+  },
+  "optPassOff": {
+    "message": "Off: pause at every step"
+  },
+  "optMinutes": {
+    "message": "$1 minutes"
+  },
+  "qrAria": {
+    "message": "Payment QR code for $1 to $2"
+  },
+  "qrTitle": {
+    "message": "Make it real: scan with your banking app"
+  },
+  "qrSteps": {
+    "message": "Open your banking app, choose to scan a QR code, check the details and confirm."
+  },
+  "qrAmount": {
+    "message": "Amount"
+  },
+  "qrTo": {
+    "message": "To"
+  },
+  "qrRef": {
+    "message": "Reference"
+  },
+  "qrSafe": {
+    "message": "You confirm the transfer in your own banking app. Future Me never connects to your bank."
+  },
+  "qrDone": {
+    "message": "Done, I moved it"
+  },
+  "qrLater": {
+    "message": "Later, keep it in the jar"
+  },
+  "setUpTransfer": {
+    "message": "Set up transfers"
+  },
+  "popupToMove": {
+    "message": "Still to move"
+  },
+  "popupMoveBtn": {
+    "message": "Transfer by QR"
+  },
+  "optTransfer": {
+    "message": "Move the money for real"
+  },
+  "optTransferHelp": {
+    "message": "After you skip a purchase, Future Me can show a payment QR code. Your banking app scans it and opens a transfer that's already filled in to the account below. You always confirm it yourself, in your own app."
+  },
+  "optTransferName": {
+    "message": "Account holder name"
+  },
+  "optIbanHelp": {
+    "message": "Your savings account, or your broker's deposit IBAN. In Trade Republic you'll find it under Transfer → Add money → Bank transfer. Brokers usually only accept money from an account in your own name."
+  },
+  "optIbanOk": {
+    "message": "Valid IBAN"
+  },
+  "optIbanBad": {
+    "message": "This IBAN doesn't look right. Check for a typo."
+  }
+}
